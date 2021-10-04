@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 15:33:28 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/01 16:34:58 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/04 17:16:40 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,28 +19,19 @@ Return: original value of dst.
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	size_t	i;
-	unsigned char *str_dst;
-	unsigned char	*str_src;
+	char	*str_dst;
+	char	*str_src;
 
-	i = 0;
-	str_dst = (unsigned char *)dst;
-	str_src = (unsigned char*)src;
-	if (dst == 0 && src == 0)
-		return (NULL);
-	if (str_dst > str_src)
+	str_dst = (char *)dst;
+	str_src = (char *)src;
+	if (str_dst == 0 && str_src == 0)
+		return (0);
+	while (n-- > 0)
 	{
-		while (n > 0)
-		{
+		if (str_dst > str_src)
 			str_dst[n] = str_src[n];
-			n--;
-		}
+		else
+			*str_dst++ = *str_src++;
 	}
-	else
-		while (i < n)
-		{
-			str_dst[i] = str_src[i];
-			i++;
-		}
-	return (str_dst);
+	return (dst);
 }

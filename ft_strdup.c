@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 11:00:41 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/01 15:45:07 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/04 15:33:39 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ If an error occurs, a null pointer is returned and errno may be set.
 #include "libft.h"
 
 char	*ft_strdup(const char *str)
-
+{
 	char	*temp;
 	size_t	len;
 	size_t	i;

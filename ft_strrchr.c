@@ -1,38 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/28 18:22:21 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/04 17:16:50 by anarodri         ###   ########.fr       */
+/*   Created: 2021/10/04 17:15:13 by anarodri          #+#    #+#             */
+/*   Updated: 2021/10/04 17:52:35 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Copies n bytes from memory area src to memory area dst.
-If dst and src overlap, behavior is undefined.
-Return: original value of dst.
+** Locate last occurrence of character in string.
+** The terminating null-character is considered part of the string.
+** Return: Pointer to the last occurence of a character (c) in str.
 */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_strrchr(const char *str, int c)
 {
-	size_t	i;
-	char	*str_dst;
-	char	*str_src;
+	int	i;
 
 	i = 0;
-	str_dst = (char *)dst;
-	str_src = (char *)src;
-	if (dst == 0 && src == 0)
-		return (NULL);
-	while (i < n)
-	{
-		str_dst[i] = str_src[i];
+	while (str[i] != 0)
 		i++;
+	if (c == '\0')
+		return ((char *)str + i);
+	while (i-- != 0)
+	{
+		if (str[i] == c)
+			return ((char *)(str + i));
 	}
-	return (dst);
+	return (0);
 }

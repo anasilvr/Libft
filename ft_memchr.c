@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/28 18:22:21 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/04 17:16:50 by anarodri         ###   ########.fr       */
+/*   Created: 2021/10/04 17:57:32 by anarodri          #+#    #+#             */
+/*   Updated: 2021/10/04 18:00:26 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Copies n bytes from memory area src to memory area dst.
-If dst and src overlap, behavior is undefined.
-Return: original value of dst.
+** Scans the initial n bytes of the memory area pointed to by str for the first instance of c.
+** Both c and the bytes of the memory area pointed to by str are interpreted as unsigned char.
+** Return: A pointer to the first occurrence of value in the block of memory pointed by ptr.
+** If the value is not found, the function returns a null pointer.
 */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memchr(const void *str, int c, size_t n)
 {
-	size_t	i;
-	char	*str_dst;
-	char	*str_src;
 
-	i = 0;
-	str_dst = (char *)dst;
-	str_src = (char *)src;
-	if (dst == 0 && src == 0)
-		return (NULL);
-	while (i < n)
-	{
-		str_dst[i] = str_src[i];
-		i++;
-	}
-	return (dst);
 }
