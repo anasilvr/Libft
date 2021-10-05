@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 14:51:59 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/05 18:21:08 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/05 18:45:18 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	i = 0;
 	dstlen = ft_strlen(dst);
 	srclen = ft_strlen(src);
+	if (dstlen > size)
+		return (srclen + size);
 	if (size == 0)
 		return (srclen);
 	while (src[i] != '\0' && dstlen + i < size - 1)
@@ -35,7 +37,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[dstlen + i] = src[i];
 		i++;
 	}
-	dst[dstlen + i] = 0;
+	dst[dstlen + i] = '\0';
 	if (size > dstlen)
 		return (dstlen + srclen);
 	return (size + srclen);

@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 17:15:13 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/04 17:52:35 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/05 18:55:21 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strrchr(const char *str, int c)
 		return ((char *)str + i);
 	while (i-- != 0)
 	{
-		if (str[i] == c)
+		if (str[i] == (unsigned char)c)
 			return ((char *)(str + i));
 	}
 	return (0);
