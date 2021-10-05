@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 17:57:32 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/05 12:37:46 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/05 13:31:19 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,16 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
+	unsigned char	*temp;
+	size_t			i;
+
+	temp = (unsigned char *)str;
+	i = 0;
+	while (i < n)
+	{
+		if (temp[i] == (unsigned char) c)
+			return (temp + i);
+		i++;
+	}
+	return (0);
 }

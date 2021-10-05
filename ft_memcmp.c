@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/04 18:01:44 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/05 13:31:18 by anarodri         ###   ########.fr       */
+/*   Created: 2021/10/05 12:57:02 by anarodri          #+#    #+#             */
+/*   Updated: 2021/10/05 13:31:12 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Compares (lexicographically) up to n characters of str1 to those of str2.
-** Characters following the null character are not compared.
+/* Compares the first n bytes of the block of memory pointed by str1 vs str2.
+** Unlike strcmp, the function DOES NOT stop comparing after finding a null char.
 ** Return:
 **		Negative value if str1 is less than str2;
 **		Zero if they're equal;
@@ -21,15 +20,18 @@
 
 #include "libft.h"
 
-int	ft_strncmp(const char *str1, const char *str2, size_t n)
+int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
-	unsigned int	i;
+	unsigned char	*temp1;
+	unsigned char	*temp2;
+	size_t			i;
 
+	temp1 = (unsigned char *)str1;
+	temp2 = (unsigned char *)str2;
 	i = 0;
 	if (n == 0)
 		return (0);
-	while (str1[i] == str2[i] && i < (n - 1)
-		&& (str1[i] != '\0' || str2[i] != '\0'))
+	while (temp1[i] == temp2[i] && i < n - 1)
 		i++;
-	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+	return (temp1[i] - temp2[i]);
 }
