@@ -6,14 +6,13 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 17:57:32 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/04 18:00:26 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/05 12:37:46 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Scans the initial n bytes of the memory area pointed to by str for the first instance of c.
-** Both c and the bytes of the memory area pointed to by str are interpreted as unsigned char.
-** Return: A pointer to the first occurrence of value in the block of memory pointed by ptr.
+/* Scans n bytes of the memory pointed to by str for the first instance of c.
+** Both are interpreted as unsigned char.
+** Return: Pointer to the first occurrence in the block of memory pointed by str.
 ** If the value is not found, the function returns a null pointer.
 */
 
@@ -21,5 +20,4 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
-
 }
