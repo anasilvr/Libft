@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 13:48:59 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/05 18:59:14 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/06 10:54:03 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	*ft_strdup(const char *str);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(const char *str, const char *substr, size_t n);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 void	*ft_calloc(size_t num, size_t size);
 void	ft_bzero(void *str, size_t n);
