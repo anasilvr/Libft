@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 16:43:56 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/18 17:32:31 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/18 17:39:12 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,11 @@ void	ft_putnbr_fd(int n, int fd)
 
 	nb = n;
 	if (nb == 2147483648 * -1)
-		ft_putstr_fd("-2147483648", fd);
+	{
+		ft_putchar_fd('-', fd);
+		ft_putchar_fd('2', fd);
+		nb = 147483648;
+	}
 	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);
