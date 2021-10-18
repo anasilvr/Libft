@@ -1,38 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/28 18:22:21 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/12 10:38:27 by anarodri         ###   ########.fr       */
+/*   Created: 2021/10/18 16:43:56 by anarodri          #+#    #+#             */
+/*   Updated: 2021/10/18 16:51:27 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-Copies n bytes from memory area src to memory area dst.
-If dst and src overlap, behavior is undefined.
-Return: original value of dst.
-*/
+/* Outputs the integer ’n’ to the given file descriptor. */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void ft_putnbr_fd(int n, int fd)
 {
-	size_t	i;
-	char	*str_dst;
-	char	*str_src;
+	long int nb;
 
-	i = 0;
-	str_dst = (char *)dst;
-	str_src = (char *)src;
-	if (dst == NULL && src == NULL)
-		return (NULL);
-	while (i < n)
+	nb = n;
+	if (nb < 0)
 	{
-		str_dst[i] = str_src[i];
-		i++;
+		ft_putchar_fd('-', fd);
+		nb *= -1;
 	}
-	return (dst);
+	if (nb >= 10)
+	{
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putnbr_fd(nb % 10, fd);
+	}
+	else
+		ft_putchar_fd(nb + '0', fd);
 }

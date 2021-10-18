@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 13:48:59 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/07 16:05:32 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/18 16:43:49 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,11 @@ char	*ft_strnstr(const char *str, const char *substr, size_t n);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 void	*ft_calloc(size_t num, size_t size);
 void	ft_bzero(void *str, size_t n);
@@ -48,5 +53,6 @@ void	*ft_memchr(const void *str, int c, size_t n);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
 
 void	ft_putchar_fd(char c, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
