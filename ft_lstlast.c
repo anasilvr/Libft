@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 15:26:35 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/19 15:47:38 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/21 14:00:42 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (lst == NULL)
-		return (0);
+		return (NULL);
 	while (lst->next != NULL)
 		lst = lst->next;
 	return (lst);
