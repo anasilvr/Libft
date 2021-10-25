@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 16:59:27 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/01 14:54:42 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/22 10:41:14 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ Return: a pointer to the memory area str.
 void	*ft_memset(void *str, int c, size_t n)
 {
 	size_t	i;
-	char	*temp;
+	char	*tmp;
 
 	i = 0;
-	temp = str;
+	tmp = str;
 	while (i < n)
 	{
-		temp[i] = (unsigned char)c;
+		tmp[i] = (unsigned char)c;
 		i++;
 	}
-	return (temp);
+	return (tmp);
 }

@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 13:26:51 by anarodri          #+#    #+#             */
-/*   Updated: 2021/09/30 16:45:16 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/10/25 11:57:08 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_atoi(const char *str)
 		i++;
 		if (nbr * neg > INT_MAX)
 			return (-1);
-		if (nbr * neg < -INT_MIN)
+		if (nbr * neg < INT_MIN)
 			return (0);
 	}
 	return (nbr * neg);
