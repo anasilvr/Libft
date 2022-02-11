@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 12:31:46 by anarodri          #+#    #+#             */
-/*   Updated: 2021/09/28 16:01:50 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/02/11 14:41:50 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ an unsigned char or the value of EOF.
 */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	ft_isalnum(int c)
 {
