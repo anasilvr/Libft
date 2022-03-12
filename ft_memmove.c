@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 15:33:28 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/04 17:16:40 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/12/13 16:39:03 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 
 	str_dst = (char *)dst;
 	str_src = (char *)src;
-	if (str_dst == 0 && str_src == 0)
-		return (0);
+	if (str_dst == NULL && str_src == NULL)
+		return (NULL);
 	while (n-- > 0)
 	{
 		if (str_dst > str_src)

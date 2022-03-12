@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 17:57:32 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/05 13:31:19 by anarodri         ###   ########.fr       */
+/*   Updated: 2021/12/13 16:40:20 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ void	*ft_memchr(const void *str, int c, size_t n)
 			return (temp + i);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
