@@ -6,22 +6,21 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 14:02:10 by anarodri          #+#    #+#             */
-/*   Updated: 2022/02/28 14:10:17 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/03/16 13:16:26 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long int ft_atol(const char *str)
+long int	ft_atol(const char *str)
 {
-	long long nb;
-	int i;
-	int sign;
+	long long	nb;
+	int			i;
+	int			sign;
 
 	nb = 0;
 	i = 0;
 	sign = 1;
-
 	while ((str[i] >= '\t' && str[i] <= '\r') || str[i] == ' ')
 		i++;
 	if (str[i] == '-')
@@ -34,9 +33,4 @@ long int ft_atol(const char *str)
 		i++;
 	}
 	return (nb * sign);
-}
-
-int main (void)
-{
-	char *str = "       ---+- "
 }
