@@ -6,11 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 10:41:47 by anarodri          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2022/02/11 14:43:26 by anarodri         ###   ########.fr       */
-=======
-/*   Updated: 2021/12/16 12:21:13 by anarodri         ###   ########.fr       */
->>>>>>> 88cffdb5dd4060f617b1e7431b9546732f9d6ec9
+/*   Updated: 2022/05/11 15:35:40 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +58,9 @@ static char	*ft_strndup(const char *str, size_t n)
 char	**ft_split(char const *s, char c)
 {
 	char	**array;
-	size_t	i; // original str index
-	size_t	j; // copy start offset
-	size_t	k; // string splitting index
+	size_t	i;
+	size_t	j;
+	size_t	k;
 
 	i = 0;
 	k = 0;

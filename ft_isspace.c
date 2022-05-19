@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atol.c                                          :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/28 14:02:10 by anarodri          #+#    #+#             */
-/*   Updated: 2022/05/11 15:34:27 by anarodri         ###   ########.fr       */
+/*   Created: 2022/05/11 15:10:57 by anarodri          #+#    #+#             */
+/*   Updated: 2022/05/11 15:12:13 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long int	ft_atol(const char *str)
+int	ft_isspace(const char *str)
 {
-	long long	nb;
-	int			i;
-	int			sign;
+	int	i;
 
-	nb = 0;
 	i = 0;
-	sign = 1;
-	while ((str[i] >= '\t' && str[i] <= '\r') || str[i] == ' ')
-		i++;
-	if (str[i] == '-')
-		sign *= -1;
-	if (str[i] == '+' || str[i] == '-')
-		i++;
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i] != '\0')
 	{
-		nb = (nb * 10) + str[i] - '0';
-		i++;
+		if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t'
+			|| str[i] == 'v' || str[i] == '\f' || str[i] == '\r')
+			i++;
+		else
+			return (1);
 	}
-	return (nb * sign);
+	return (0);
 }
