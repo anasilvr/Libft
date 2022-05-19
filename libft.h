@@ -6,7 +6,11 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 13:48:59 by anarodri          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2022/05/18 15:14:17 by anarodri         ###   ########.fr       */
+=======
+/*   Updated: 2022/03/16 13:20:50 by anarodri         ###   ########.fr       */
+>>>>>>> b0d4bffc161c2aa4f0352cb466ec59a10f231bd2
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +38,10 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_atoi(const char *str);
 long	int	ft_atol(const char *str);
+<<<<<<< HEAD
 int		ft_isspace(const char *str);
+=======
+>>>>>>> b0d4bffc161c2aa4f0352cb466ec59a10f231bd2
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
