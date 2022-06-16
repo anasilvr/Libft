@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/15 12:31:46 by anarodri          #+#    #+#             */
-/*   Updated: 2022/05/19 13:24:03 by anarodri         ###   ########.fr       */
+/*   Created: 2022/05/11 15:10:57 by anarodri          #+#    #+#             */
+/*   Updated: 2022/05/11 15:12:13 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Alphanumeric character test.
-Tests for any character for which ft_isalpha or ft_isdigit is true.
-The value of the argument must be representable as:
-an unsigned char or the value of EOF.
-*/
-
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_isspace(const char *str)
 {
-	if (ft_isalpha (c) || ft_isdigit(c))
-		return (1);
-	else
-		return (0);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t'
+			|| str[i] == 'v' || str[i] == '\f' || str[i] == '\r')
+			i++;
+		else
+			return (1);
+	}
+	return (0);
 }

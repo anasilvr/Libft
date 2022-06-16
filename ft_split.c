@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 10:41:47 by anarodri          #+#    #+#             */
-/*   Updated: 2021/12/16 12:21:13 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/05/19 14:30:02 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,9 @@ static char	*ft_strndup(const char *str, size_t n)
 char	**ft_split(char const *s, char c)
 {
 	char	**array;
-	size_t	i; // original str index
-	size_t	j; // copy start offset
-	size_t	k; // string splitting index
+	size_t	i;
+	size_t	j;
+	size_t	k;
 
 	i = 0;
 	k = 0;

@@ -6,7 +6,7 @@
 #    By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/20 12:27:09 by anarodri          #+#    #+#              #
-#    Updated: 2021/11/16 11:42:52 by anarodri         ###   ########.fr        #
+#    Updated: 2022/05/19 16:20:09 by anarodri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,13 +24,10 @@ SRC		=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 			ft_strchr.c ft_atoi.c ft_strdup.c ft_calloc.c ft_strrchr.c ft_strncmp.c ft_memchr.c \
 			ft_memcmp.c ft_strnstr.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
 			ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_putendl_fd.c \
+			ft_atol.c ft_isspace.c ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
+			ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJ		=	$(SRC:.c=.o)
-
-BONUS	=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
-			ft_lstclear.c ft_lstiter.c ft_lstmap.c
-
-OBJ_B	=	$(BONUS:.c=.o)
 
 CC		=	gcc
 
@@ -41,17 +38,14 @@ RM		=	rm -f
 all:		$(NAME)
 
 $(NAME):	$(OBJ)
-			ar -rcs $(NAME) $(OBJ)
-
-bonus:		$(OBJ) $(OBJ_B)
-			ar -rcs $(NAME) $(OBJ) $(OBJ_B)
+			@ar -rcs $(NAME) $(OBJ)
 
 clean:
-			$(RM) $(OBJ) $(OBJ_B)
+			$(RM) $(OBJ) *.gch
 
 fclean:		clean
 			$(RM) $(NAME)
 
 re:			fclean all
 
-.PHONY:		all bonus clean fclean re
+.PHONY:		all clean fclean re

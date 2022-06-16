@@ -6,21 +6,23 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 13:48:59 by anarodri          #+#    #+#             */
-/*   Updated: 2021/10/21 18:44:45 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/05/19 14:30:43 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
+# include <stdlib.h>
 # include <limits.h>
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
+	struct s_list	*prev;
 }			t_list;
 
 int		ft_isalnum(int c);
@@ -31,6 +33,7 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_atoi(const char *str);
+long	int	ft_atol(const char *str);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
