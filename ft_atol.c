@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 14:02:10 by anarodri          #+#    #+#             */
-/*   Updated: 2022/05/25 12:23:42 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/06/15 14:08:54 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 long int	ft_atol(const char *str)
 {
-	long nb;
+	long	nb;
 	int		i;
 	int		sign;
 
