@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 14:58:13 by anarodri          #+#    #+#             */
-/*   Updated: 2022/02/07 18:41:06 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/07/20 12:06:08 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,6 +122,6 @@ char	*get_next_line(int fd)
 	if (buffer == NULL)
 		return (NULL);
 	line = make_line(buffer);
-	// buffer = new_buffer(buffer);
+	buffer = new_buffer(buffer);
 	return (line);
 }
