@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 12:32:52 by anarodri          #+#    #+#             */
-/*   Updated: 2022/10/04 12:46:30 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/10/04 12:51:29 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ void	*ft_realloc(void *ptr, size_t size)
 	}
 	if (!new)
 		return (NULL);
+	ft_memcpy(new, ptr, size);
 	return (new);
 }
