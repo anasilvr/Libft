@@ -6,16 +6,14 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 15:22:10 by anarodri          #+#    #+#             */
-/*   Updated: 2022/12/15 11:31:06 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/12/15 11:33:31 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-# include <stdarg.h>
-# include <unistd.h>
-# include <limits.h>
-# include <stdlib.h>
+
+# include "../libft.h"
 
 int		ft_printf(const char *str, ...);
 void	ft_printf_parse(char c, va_list args, int *len);
