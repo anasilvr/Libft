@@ -6,14 +6,9 @@
 #    By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/20 12:27:09 by anarodri          #+#    #+#              #
-#    Updated: 2022/10/06 15:56:37 by anarodri         ###   ########.fr        #
+#    Updated: 2022/12/15 11:29:18 by anarodri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-#	target: [dependencies]
-#		<shell command to execute>
-#		<shell command to execute>
-#		...
 
 NAME	=	libft.a
 
@@ -27,7 +22,11 @@ SRC		=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 			ft_atol.c ft_isspace.c ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 			ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_realloc.c
 
-OBJ		=	$(SRC:.c=.o)
+GNL		 = ./GNL/get_next_line.c
+
+PRINTF	=	./ft_printf/ft_printf.c ./ft_printf/utils.c
+
+OBJ		=	$(SRC:.c=.o) $(GNL:.c=.o) $(PRINTF:.c=.o)
 
 CC		=	gcc
 

@@ -6,7 +6,7 @@
 /*   By: anarodri <anarodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 14:58:13 by anarodri          #+#    #+#             */
-/*   Updated: 2022/07/20 12:06:08 by anarodri         ###   ########.fr       */
+/*   Updated: 2022/12/15 11:28:30 by anarodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@
 ** and recreates it accordingly by applying ft_strjoin.
 ** Return: Concatenation of conserved buffer and the new line.
 ** If an error occurs during read, frees buffer and returns NULL*/
-char	*read_to_buffer(int fd, char *buffer)
+
+static	char	*read_to_buffer(int fd, char *buffer)
 {
 	char	*tmp;
 	int		bytes;
@@ -51,7 +52,7 @@ char	*read_to_buffer(int fd, char *buffer)
 /* Creates the line saved inside *buffer.
 ** Copies buffer up until the next new line, NULL-terminating the string.
 ** Return: next line to be printed, NULL is allocation fails.*/
-char	*make_line(char *buffer)
+static	char	*make_line(char *buffer)
 {
 	int		i;
 	char	*line;
@@ -80,32 +81,32 @@ char	*make_line(char *buffer)
 }
 
 /* Updates buffer by reseting its start to the character after the next \n.*/
-// char	*new_buffer(char *buffer)
-// {
-// 	int		i;
-// 	int		j;
-// 	char	*str;
+static	char	*new_buffer(char *buffer)
+{
+	int		i;
+	int		j;
+	char	*str;
 
-// 	i = 0;
-// 	while (buffer[i] != '\0' && buffer[i] != '\n')
-// 		i++;
-// 	if (buffer[i] == '\0')
-// 	{
-// 		free(buffer);
-// 		return (NULL);
-// 	}
-// 	str = (char *)malloc(ft_strlen(buffer) - i + 1);
-// 	if (str == NULL)
-// 		return (NULL);
-// 	i += 1;
-// 	j = 0;
-// 	while (buffer[i] != '\0')
-// 		str[j++] = buffer[i++];
-// 	str[j] = '\0';
-// 	free(buffer);
-// 	buffer = NULL;
-// 	return (str);
-// }
+	i = 0;
+	while (buffer[i] != '\0' && buffer[i] != '\n')
+		i++;
+	if (buffer[i] == '\0')
+	{
+		free(buffer);
+		return (NULL);
+	}
+	str = (char *)malloc(ft_strlen(buffer) - i + 1);
+	if (str == NULL)
+		return (NULL);
+	i += 1;
+	j = 0;
+	while (buffer[i] != '\0')
+		str[j++] = buffer[i++];
+	str[j] = '\0';
+	free(buffer);
+	buffer = NULL;
+	return (str);
+}
 
 /* Reads the file's text to the variable buffer (read_to_buffer),
 ** Creates a new line if the buffer is not yet empty (make_line),
