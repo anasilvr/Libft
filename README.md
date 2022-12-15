@@ -3,11 +3,7 @@ This project aims to code a C library regrouping usual functions that can be use
 
 📄 [Subject PDF v. 15](https://github.com/anasilvr/Libft/blob/main/en.subject.pdf)
 
-🔨 [Makefile](#makefile)
-
-🗂 [Files](#files)
-
-The contents and structure of this repository changes frequently as new general functions are developed during other projects and added here.
+The contents and structure of this repository are subject to changes frequently as new general functions developed during other projects are added here.
 
 ## Makefile 🔨
 | Command | Usage |
@@ -22,7 +18,7 @@ The contents and structure of this repository changes frequently as new general 
   
 | Function | Description |
 | --- | --- |
-| [get\_next\_line.c](https://github.com/anasilvr/Libft/blob/main/GNL/get_next_line.c) |returns a line read from a file descriptor|
+| [get\_next\_line.c](https://github.com/anasilvr/Libft/blob/main/GNL/get_next_line.c) | returns a line read from a file descriptor|
 </details>
 
 <details><summary>:file_folder: ft_printf</summary>
@@ -36,10 +32,10 @@ The contents and structure of this repository changes frequently as new general 
  
 | Function | Description |
 | --- | --- |
-| [ft\_putchar\_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putchar_fd.c) |outputs a character to the given file descriptor|
-| [ft_putendl_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putendl_fd.c) |outputs a string to the given file descriptor followed by a \n|
-| [ft_putnbr_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putnbr_fd.c) |outputs an integer to the given file descriptor|
-| [ft_putstr_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putstr_fd.c) |outputs a string to the given file descriptor|
+| [ft\_putchar\_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putchar_fd.c) | outputs a character to the given file descriptor|
+| [ft_putendl_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putendl_fd.c) | outputs a string to the given file descriptor followed by a \n|
+| [ft_putnbr_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putnbr_fd.c) | outputs an integer to the given file descriptor|
+| [ft_putstr_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putstr_fd.c) | outputs a string to the given file descriptor|
 </details>
 
 <details><summary>:file_folder: lists</summary>
