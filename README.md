@@ -1,10 +1,10 @@
 # Libft
 This project aims to code a C library regrouping usual functions that can be used in all other 42 projects.
 
-# Libft: Coding a library in C
+📄 [Subject PDF v. 15](https://github.com/anasilvr/Libft/blob/main/en.subject.pdf)
 
-📄 [Subject PDF v. 15](https://github.com/anasilvr/Libft/blob/main/en.subject.pdf) 
 🔨 [Makefile](#makefile)
+
 🗂 [Files](#files)
 
 The contents and structure of this repository changes frequently as new general functions are developed during other projects and added here.
@@ -18,10 +18,11 @@ The contents and structure of this repository changes frequently as new general 
 | `make re` | removes all .o & .a files then remakes them |
 
 ## Files 
-:file_folder: **GNL** 
+<details><summary>:file_folder: **GNL**</summary>
 | Function | Description |
 | --- | --- |
 | [get\_next\_line.c](https://github.com/anasilvr/Libft/blob/main/GNL/get_next_line.c) |returns a line read from a file descriptor|
+</details>
 
 :file_folder: **ft_printf** 
 | Function | Description |
