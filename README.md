@@ -3,7 +3,7 @@ This project aims to code a C library regrouping usual functions that can be use
 
 📄 [Subject PDF v. 15](https://github.com/anasilvr/Libft/blob/main/en.subject.pdf)
 
-The contents and structure of this repository are subject to changes frequently as new general functions developed during other projects are added here.
+The content of this repository is subject to constant change as new general functions developed during other projects are added here.
 
 ## Makefile 🔨
 | Command | Usage |
