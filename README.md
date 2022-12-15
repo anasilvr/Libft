@@ -19,6 +19,7 @@ The contents and structure of this repository changes frequently as new general 
 
 ## Files 
 <details><summary>:file_folder: **GNL**</summary>
+  
 | Function | Description |
 | --- | --- |
 | [get\_next\_line.c](https://github.com/anasilvr/Libft/blob/main/GNL/get_next_line.c) |returns a line read from a file descriptor|
