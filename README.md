@@ -18,21 +18,21 @@ The contents and structure of this repository changes frequently as new general 
 | `make re` | removes all .o & .a files then remakes them |
 
 ## Files 
-<details><summary>:file_folder: **GNL**</summary>
+<details><summary>:file_folder: GNL</summary>
   
 | Function | Description |
 | --- | --- |
 | [get\_next\_line.c](https://github.com/anasilvr/Libft/blob/main/GNL/get_next_line.c) |returns a line read from a file descriptor|
 </details>
 
-<details><summary>:file_folder: **ft_printf**</summary>
+<details><summary>:file_folder: ft_printf</summary>
   
 | Function | Description |
 | --- | --- |
 | [ft\_printf.c](https://github.com/anasilvr/Libft/blob/main/ft_printf/ft_printf.c) | prints to STDOUT and returns an int value equal to the number of printed chars (%cspduxX)|
 </details>
 
-<details><summary>:file_folder: **io**</summary>
+<details><summary>:file_folder: io</summary>
  
 | Function | Description |
 | --- | --- |
@@ -42,7 +42,7 @@ The contents and structure of this repository changes frequently as new general 
 | [ft_putstr_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putstr_fd.c) |outputs a string to the given file descriptor|
 </details>
 
-<details><summary>:file_folder: **lists**</summary>
+<details><summary>:file_folder: lists</summary>
 
 | Function | Description |
 | --- | --- |
@@ -57,17 +57,17 @@ The contents and structure of this repository changes frequently as new general 
 | [ft_lstsize.c](https://github.com/anasilvr/Libft/blob/main/lists/ft_lstsize.c) | counts the number of elements in a list|
 </details>
 
-<details><summary>:file_folder: **[WIP]** 🚧</summary>
+<details><summary>:file_folder: [WIP] 🚧</summary>
 
-:file_folder: **memalloc:** 
+:file_folder: memalloc: 
 | Function | Description |
 | --- | --- |
 
-:file_folder: **strings:**
+:file_folder: strings:
 | Function | Description |
 | --- | --- |
 
-:file_folder: **types:**  
+:file_folder: types:
 | Function | Description |
 | --- | --- |
 </details>
