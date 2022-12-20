@@ -87,12 +87,12 @@ The content of this repository is subject to constant change as new general func
 | [ft_strlcat.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strlcat.c) | appends two strings |
 | [ft_strlcpy.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strlcpy.c) | size-bounded string copying |
 | [ft_strlen.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strlen.c) | counts the numbers of characters preceding the terminating NUL-character of a string|
-| [ft_strmapi.c]() | . |
+| [ft_strmapi.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strmapi.c) | applies a function to each character of a string, creating a new string with the modifications|
 | [ft_strncmp.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strncmp.c) | compares (lexicographically) up to n characters of two strings|
-| [ft_strnstr.c]() | . |
-| [ft_strrchr.c]() | . |
-| [ft_strtrim.c]() | . |
-| [ft_substr.c]() | . |
+| [ft_strnstr.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strnstr.c) | locates the first occurrence of the null-terminated substring in the a string, where not more than n characters are searched|
+| [ft_strrchr.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strrchr.c) | locate last occurrence of character in string|
+| [ft_strtrim.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strtrim.c) | allocates and returns a copy of a string with the characters specified in ’set’ removed from the beginning and the end of the string|
+| [ft_substr.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_substr.c) | allocates and returns a substring from another string|
 </details>
 
 <details><summary>:file_folder: [WIP] 🚧</summary>
