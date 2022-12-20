@@ -115,3 +115,7 @@ The content of this repository is subject to constant change as new general func
 | [ft_tolower.c](https://github.com/anasilvr/Libft/blob/main/types/ft_tolower.c) | upper case to lower case letter conversion|
 | [ft_toupper.c](https://github.com/anasilvr/Libft/blob/main/types/ft_toupper.c) | lower case to upper case letter conversion|
 </details>
+
+<img align="right" width="150" alt="125/100" src="https://user-images.githubusercontent.com/91762843/208724476-e401aed6-c5f2-4a93-a72c-7647236032ea.png">
+
+
