@@ -21,12 +21,14 @@ The content of this repository is subject to constant change as new general func
 | [get\_next\_line.c](https://github.com/anasilvr/Libft/blob/main/GNL/get_next_line.c) | returns a line read from a file descriptor|
 </details>
 
+
 <details><summary>:file_folder: ft_printf</summary>
   
 | Function | Description |
 | --- | --- |
 | [ft\_printf.c](https://github.com/anasilvr/Libft/blob/main/ft_printf/ft_printf.c) | prints to STDOUT and returns an int value equal to the number of printed chars (%cspduxX)|
 </details>
+
 
 <details><summary>:file_folder: io</summary>
  
@@ -37,6 +39,7 @@ The content of this repository is subject to constant change as new general func
 | [ft_putnbr_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putnbr_fd.c) | outputs an integer to the given file descriptor|
 | [ft_putstr_fd.c](https://github.com/anasilvr/Libft/blob/main/io/ft_putstr_fd.c) | outputs a string to the given file descriptor|
 </details>
+
 
 <details><summary>:file_folder: lists</summary>
 
@@ -53,6 +56,7 @@ The content of this repository is subject to constant change as new general func
 | [ft_lstsize.c](https://github.com/anasilvr/Libft/blob/main/lists/ft_lstsize.c) | counts the number of elements in a list|
 </details>
 
+
 <details><summary>:file_folder: memalloc</summary> 
   
 | Function | Description |
@@ -63,6 +67,7 @@ The content of this repository is subject to constant change as new general func
 | [ft_xcalloc.c](https://github.com/anasilvr/Libft/blob/main/memalloc/ft_xcalloc.c) | same as calloc(), but it directly exits in case of memory allocation error|
 | [xfree.c](https://github.com/anasilvr/Libft/blob/main/memalloc/xfree.c) | frees a pointer after checking it isn't NULL |
 </details>
+
 
 <details><summary>:file_folder: strings</summary> 
   
@@ -95,13 +100,17 @@ The content of this repository is subject to constant change as new general func
 | [ft_substr.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_substr.c) | allocates and returns a substring from another string|
 </details>
 
-<details><summary>:file_folder: [WIP] 🚧</summary>
 
-  :file_folder: strings:
+<details><summary>:file_folder: types</summary> 
+  
 | Function | Description |
-| --- | --- |
-
-:file_folder: types:
-| Function | Description |
-| --- | --- |
+| [ft_isalnum.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isalnum.c) | tests for any character for which ft_isalpha or ft_isdigit is true|
+| [ft_isalpha.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isalpha.c) | tests for any character for which ft_isupper or ft_islower is true|
+| [ft_isascii.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isascii.c) | tests for any ASCII character between 0 and octal 0177 inclusive|
+| [ft_isdigit.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isdigit.c) | tests for a decimal digit character|
+| [ft_isprint.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isprint.c) | tests for any printing character, including space|
+| [ft_isset.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isset.c) | tests if the character is part of a set|
+| [ft_isspace.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isspace.c) | tests if a character is a white-space character|
+| [ft_tolower.c](https://github.com/anasilvr/Libft/blob/main/types/ft_tolower.c) | upper case to lower case letter conversion|
+| [ft_toupper.c](https://github.com/anasilvr/Libft/blob/main/types/ft_toupper.c) | lower case to upper case letter conversion|
 </details>
