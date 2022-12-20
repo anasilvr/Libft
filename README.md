@@ -104,6 +104,7 @@ The content of this repository is subject to constant change as new general func
 <details><summary>:file_folder: types</summary> 
   
 | Function | Description |
+| --- | --- |
 | [ft_isalnum.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isalnum.c) | tests for any character for which ft_isalpha or ft_isdigit is true|
 | [ft_isalpha.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isalpha.c) | tests for any character for which ft_isupper or ft_islower is true|
 | [ft_isascii.c](https://github.com/anasilvr/Libft/blob/main/types/ft_isascii.c) | tests for any ASCII character between 0 and octal 0177 inclusive|
