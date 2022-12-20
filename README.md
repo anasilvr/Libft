@@ -64,6 +64,37 @@ The content of this repository is subject to constant change as new general func
 | [xfree.c](https://github.com/anasilvr/Libft/blob/main/memalloc/xfree.c) | frees a pointer after checking it isn't NULL |
 </details>
 
+<details><summary>:file_folder: strings</summary> 
+  
+| Function | Description |
+| --- | --- |
+| [ft_atoi.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_atoi.c) | converts ASCII string to integer|
+| [ft_atol.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_atol.c) | converts ASCII string to long integer |
+| [ft_bzero.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_bzero.c) | erases the data in the n bytes of the memory by writing '\0' to that area|
+| [ft_itoa.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_itoa.c) | allocates and returns a string representing the integer passed as argument|
+| [ft_memchr.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_memchr.c) | scans n bytes of the pointed memory for the first instance of a char|
+| [ft_memcmp.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_memcmp.c) | compares the first n bytes of the block of memory from 2 strings|
+| [ft_memcpy.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_memcpy.c) | copies n bytes from one memory area to another|
+| [ft_memmove.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_memmove.c) | copies n bytes from string to to another using a temporary array to handle overlap|
+| [ft_memset.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_memset.c) | fill a block of memory with a particular value|
+| [ft_split.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_split.c) | splits a string, with specified character as delimiter, into an array of strings|
+| [ft_strchr.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strchr.c) | locates the first occurrence of c (converted to a char) in the string|
+| [ft_strcmp.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strcmp.c) | compares (lexicographically) two strings|
+| [ft_strdup.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strdup.c) | allocates sufficient memory for a copy a string copies and returns a pointer to it|
+| [ft_striteri.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_striteri.c) | applies the function f to each character of the string passed as argument |
+| [ft_strjoin.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strjoin.c) | allocates and returns a new string (concatenation of two strings) |
+| [ft_strjoin_free.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strjoin_free.c) | same as ft_strjoin(), but it frees the old string |
+| [ft_strlcat.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strlcat.c) | appends two strings |
+| [ft_strlcpy.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strlcpy.c) | size-bounded string copying |
+| [ft_strlen.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strlen.c) | counts the numbers of characters preceding the terminating NUL-character of a string|
+| [ft_strmapi.c]() | . |
+| [ft_strncmp.c](https://github.com/anasilvr/Libft/blob/main/strings/ft_strncmp.c) | compares (lexicographically) up to n characters of two strings|
+| [ft_strnstr.c]() | . |
+| [ft_strrchr.c]() | . |
+| [ft_strtrim.c]() | . |
+| [ft_substr.c]() | . |
+</details>
+
 <details><summary>:file_folder: [WIP] 🚧</summary>
 
   :file_folder: strings:
