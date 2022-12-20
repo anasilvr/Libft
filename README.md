@@ -54,6 +54,7 @@ The content of this repository is subject to constant change as new general func
 </details>
 
 <details><summary>:file_folder: memalloc</summary> 
+  
 | Function | Description |
 | --- | --- |
 | [free_table.c](https://github.com/anasilvr/Libft/blob/main/memalloc/free_table.c) | frees all elements of a 2d array |
