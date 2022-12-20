@@ -53,13 +53,19 @@ The content of this repository is subject to constant change as new general func
 | [ft_lstsize.c](https://github.com/anasilvr/Libft/blob/main/lists/ft_lstsize.c) | counts the number of elements in a list|
 </details>
 
-<details><summary>:file_folder: [WIP] 🚧</summary>
-
-:file_folder: memalloc: 
+<details><summary>:file_folder: memalloc</summary> 
 | Function | Description |
 | --- | --- |
+| [free_table.c](https://github.com/anasilvr/Libft/blob/main/memalloc/free_table.c) | frees all elements of a 2d array |
+| [ft_calloc.c](https://github.com/anasilvr/Libft/blob/main/memalloc/ft_calloc.c) | contiguously allocates memory that is filled with bytes of value zero|
+| [ft_realloc.c](https://github.com/anasilvr/Libft/blob/main/memalloc/ft_realloc.c) | reallocates the given area of memory|
+| [ft_xcalloc.c](https://github.com/anasilvr/Libft/blob/main/memalloc/ft_xcalloc.c) | same as calloc(), but it directly exits in case of memory allocation error|
+| [xfree.c](https://github.com/anasilvr/Libft/blob/main/memalloc/xfree.c) | frees a pointer after checking it isn't NULL |
+</details>
 
-:file_folder: strings:
+<details><summary>:file_folder: [WIP] 🚧</summary>
+
+  :file_folder: strings:
 | Function | Description |
 | --- | --- |
 
